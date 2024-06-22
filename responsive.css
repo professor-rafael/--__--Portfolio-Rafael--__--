@@ -1,0 +1,96 @@
+@media (min-width: 768px){
+:root{
+    --title-font-size: 2.5rem;
+  
+    --big-font-size: 1.75rem;
+    --middle-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --height-nav: 4em;
+  }
+
+  .hero__content p{
+    max-width: 50%;
+  }
+
+  .contact__content{
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 960px){
+  .nav__icon-menu{
+    display: none;
+  }
+
+  .nav__links{
+    position: static;
+    background-color: transparent;
+    width: auto;
+    height: 100%;
+    margin-top: 0;
+    padding-top: 0;
+
+    flex-direction: row;
+    transition: none;
+  }
+
+  .nav__link{
+    margin-left: 2em;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    position: relative;
+  }
+
+  .nav__link::after{
+    content: '';
+    width: 0;
+    height: .2em;
+    background-color: var(--main-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    transition: width .3s ease;
+  }
+
+  .nav__link:hover::after{
+    width: 100%;
+  }
+
+  .nav__link a{
+    color: var(--text-color);
+    font-weight: normal;
+    text-decoration: none;
+  }
+}
+
+@media (min-width: 1024px){
+  :root{
+    --title-font-size: 3rem;
+  }
+}
+
+@media (min-width: 1200px){
+
+  .nav__logo{
+    font-size: 1.875rem;
+  }
+
+  .nav__logo span{
+    font-size: 3rem;
+  }
+
+  .hero__content h3{
+    font-size: 1.625rem;
+  }
+
+  .social-media--hero{
+    flex-direction: row;
+    gap: 2em;
+  }
+
+  .proyects__cards{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
