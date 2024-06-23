@@ -188,8 +188,6 @@ textarea{
   height: 100vh;
   background-image: url('../images/ras.jpg');
   background-size: cover;
-  background-position: center right;
-  padding-top: auto;
 }
 
 .hero__content{
