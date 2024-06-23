@@ -189,7 +189,7 @@ textarea{
   background-image: url('../images/ras.jpg');
   background-size: cover;
   background-position: center right;
-  padding-top: 50%;
+  padding-top: auto;
 }
 
 .hero__content{
