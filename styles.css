@@ -10,7 +10,7 @@
   --small-font-size: 0.75rem;
   --bg-color: #000;
   --second-bg-color: #808080;
-  --text-color: #fff;
+  --text-color:#fbfbfe;
   --second-text-color: #000;
   --main-color: #001aff;
   --height-nav: 3em;
@@ -34,6 +34,7 @@ body{
   font-size: var(--normal-font-size);
   color: var(--text-color);
   background-color: var(--bg-color);
+  background: url('bg-desktop.webp');
 }
 
 li{
@@ -379,4 +380,57 @@ footer p{
 
 h4{
   font-size: 24px;
+}
+
+.ball {
+  position: relative;
+  bottom: 50px;
+  left: calc(100% - 20px);
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  animation: ball-move8234 3s ease-in-out 1s infinite alternate;
+}
+
+.ball::after {
+  position: absolute;
+  content: '';
+  top: 25px;
+  right: 5px;
+  width: 5px;
+  height: 5px;
+  background: #000;
+  border-radius: 50%;
+}
+
+.bar {
+  width: 200px;
+  height: 12.5px;
+  background: purple;
+  border-radius: 30px;
+  transform: rotate(-15deg);
+  animation: up-down6123 3s ease-in-out 1s infinite alternate;
+}
+
+@keyframes up-down6123 {
+  from {
+    transform: rotate(-15deg);
+  }
+
+  to {
+    transform: rotate(15deg);
+  }
+}
+
+@keyframes ball-move8234 {
+  from {
+    left: calc(100% - 40px);
+    transform: rotate(360deg);
+  }
+
+  to {
+    left: calc(0% - 20px);
+    transform: rotate(0deg);
+  }
 }
